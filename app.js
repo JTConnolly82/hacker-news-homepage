@@ -12,13 +12,9 @@ axios.get('https://hacker-news.firebaseio.com/v0/topstories.json').then((res)=>{
     let arrows = document.createElement('div');
     arrows.className = 'arrows';
     let upvote = document.createElement('div');
-    upvote.innerText = '👆'
+    upvote.innerText = '👏'
     upvote.className = 'upvote';
     arrows.appendChild(upvote);
-    let downvote = document.createElement('div');
-    downvote.innerText = '👇'
-    downvote.className = 'downvote';
-    arrows.appendChild(downvote);
     let scoreBar = document.createElement('div');
     scoreBar.innerText = res.data.score;
     scoreBar.className = 'scorebar'
